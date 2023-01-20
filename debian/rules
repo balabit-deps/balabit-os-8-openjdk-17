@@ -157,7 +157,7 @@ ifneq (,$(filter parallel=%,$(subst $(COMMA), ,$(DEB_BUILD_OPTIONS))))
   NJOBS = $(subst parallel=,,$(filter parallel=%,$(subst $(COMMA), ,$(DEB_BUILD_OPTIONS))))
 endif
 
-ifneq (,$(filter $(distrel), sid bookworm bullseye focal jammy kinetic))
+ifneq (,$(filter $(distrel), sid bookworm bullseye focal jammy kinetic lunar ))
   jtreg_pkg = jtreg6
 else ifneq (,$(filter $(distrel), sid bookworm bullseye))
   jtreg_pkg = jtreg

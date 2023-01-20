@@ -1,8 +1,20 @@
-openjdk-17 (17.0.5+8-2ubuntu1~20.04) focal-security; urgency=medium
+openjdk-17 (17.0.6+10-0ubuntu1~20.04.1) focal-security; urgency=medium
 
-  * Build 17.0.5+8 for Ubuntu 20.04 LTS.
+  * Build for Ubuntu 20.04.
 
- -- Matthias Klose <doko@ubuntu.com>  Mon, 24 Oct 2022 18:44:41 +0200
+ -- Vladimir Petko <vladimir.petko@canonical.com>  Fri, 20 Jan 2023 21:56:27 +1300
+
+openjdk-17 (17.0.6+10-0ubuntu1) lunar; urgency=medium
+
+  * OpenJDK 17.0.6 release, build 10.
+    - CVE-2023-21835, CVE-2023-21843
+    - Release notes:
+      https://www.oracle.com/java/technologies/javase/17-0-6-relnotes.html
+  * debian/patches/*: Refreshed patches for the new release and dropped unused
+    patches.
+  * debian/rules: add lunar to jtreg version selection.
+
+ -- Vladimir Petko <vladimir.petko@canonical.com>  Thu, 19 Jan 2023 21:34:14 +1300
 
 openjdk-17 (17.0.5+8-2ubuntu1) kinetic-security; urgency=medium
 
